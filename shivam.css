@@ -1,0 +1,27 @@
+/*Shivam CSS*/
+
+.footer { 
+	line-height: 30px;
+
+}
+
+.text-navbar {
+    color: #D4AF37;
+}
+
+#slides { 
+	height: 90vh;
+
+}
+
+#slides img { 
+	min-width: 100vh;
+	max-width: none;
+	max-height: 90vh;
+	min-height: 90vh;
+}
+
+.navbar {
+	background-color: white;
+	color: black;
+}
