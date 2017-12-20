@@ -22,14 +22,14 @@
 }
 
 #navbar {
-	background-color: black;
+	background-color: #FFFBF4;
 	text-align: center;
-	color: #D4AF37;
+	color: #808080;
 	height: 8vh;
 	font-size: 3vh;
 }
 
 .navLink {
-	color: #D4AF37;
+	color: #808080;
 	/*padding-top: 30%;*/
 }
