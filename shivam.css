@@ -1,35 +1,48 @@
 /*Shivam CSS*/
+body { 
+	background-color: #FFFBF4;
+}
 
 .footer { 
 	line-height: 30px;
 
 }
 
-/*.text-navbar {
-    color: #D4AF37;
-}*/
-
 #slides { 
-	height: 90vh;
-
+	width: 100vh;
+	max-height: 90vh;
 }
 
 #slides img { 
-	min-width: 100vh;
-	max-width: none;
+	width: 100vh;
 	max-height: 90vh;
-	min-height: 90vh;
-}
+} 
 
-#navbar {
+.navbar {
+    text-align: right;
+    display: block;
 	background-color: #FFFBF4;
-	text-align: center;
+	padding-top: 1.5vh;
+	padding-right: 5vh;
 	color: #808080;
 	height: 8vh;
 	font-size: 3vh;
 }
 
-.navLink {
+.navbar a {
 	color: #808080;
-	/*padding-top: 30%;*/
+	font-family: 'Barlow', sans-serif;
+}
+
+.navbar a:hover {
+	color: #957B5F;
+	text-decoration: none;
+}
+
+.navbar a.active { 
+	color: #63523F;
+}
+
+.divider { 
+	color: #808080;
 }
