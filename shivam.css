@@ -9,13 +9,10 @@ body {
 }
 
 #slides { 
-	width: 100vh;
-	max-height: 90vh;
+	min-width: 100vh;
 }
 
 #slides img { 
-	width: 100vh;
-	max-height: 90vh;
 } 
 
 .navbar {
