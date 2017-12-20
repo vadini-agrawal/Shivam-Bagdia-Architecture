@@ -5,9 +5,9 @@
 
 }
 
-.text-navbar {
+/*.text-navbar {
     color: #D4AF37;
-}
+}*/
 
 #slides { 
 	height: 90vh;
@@ -21,7 +21,15 @@
 	min-height: 90vh;
 }
 
-.navbar {
-	background-color: white;
-	color: black;
+#navbar {
+	background-color: black;
+	text-align: center;
+	color: #D4AF37;
+	height: 8vh;
+	font-size: 3vh;
+}
+
+.navLink {
+	color: #D4AF37;
+	/*padding-top: 30%;*/
 }
