@@ -13,6 +13,7 @@ body {
 }
 
 #slides img { 
+	min-width: 100vh;
 } 
 
 .navbar {
