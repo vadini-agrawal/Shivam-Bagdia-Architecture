@@ -44,3 +44,11 @@ body {
 .divider { 
 	color: #808080;
 }
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+	background-color: #63523F;
+}
+
+.carousel-item.active { 
+	fill-color: #63523F;
+}
