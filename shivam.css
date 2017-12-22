@@ -52,3 +52,52 @@ body {
 .carousel-item.active { 
 	fill-color: #63523F;
 }
+
+#footer { 
+	margin-top: 20vh;
+	margin-right: 0vh;
+	height: 23vh;
+	background-color: #2B2B2B;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 2.2vh;
+	line-height: 2.1vh;
+}
+
+.info { 
+	padding-top: 3.6vh;
+	padding-bottom: 3vh;
+	padding-left: 35vh;
+}
+
+.filler { 
+	height: 7vh;
+}
+
+.overlay { 
+	position: absolute;
+	top: 0;
+  	bottom: 0;
+	left: 40px;
+	right: 0;
+	height: 100%;
+	width: 900px;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	background-color: #63523F;
+}
+
+.snippet:hover .overlay {
+	opacity: .85;
+}
+  
+.projLabel {
+  color: #FFFBF4;
+  font-size: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Exo 2', sans-serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
