@@ -24,13 +24,19 @@
 
 <body> 
 
-
 <div class="row"> 
   <div class="col-md-2 col-sm-0 col-xs-0"> </div>
   <div class="col-md-8 col-sm-12 col-xs-12">
   <div class="navbar" class="container-fluid"> 
       <a class="active" href="index.html"> Home &nbsp; &nbsp; &nbsp; <span class="divider"> | </span> &nbsp; &nbsp; &nbsp;</a>
-      <a href="projects.html"> Projects &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a>
+  <div class="dropdown">
+  <a class="proj" href="projects.html"> Projects &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
+     <div class="dropdown-content">
+        <a href="#">01</a>
+        <a href="#">02</a>
+        <a href="#">03</a>
+  </div>
+  </div>
       <a href="#"> Studio &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
       <a href="#"> Contact </a>
   </div>
@@ -54,7 +60,7 @@
     <!--The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="shivam-waffle.jpg" alt="CNN">
+        <a href="proj1.html"> <img src="shivam-waffle.jpg" alt="Project 01"> </a>
       </div>
       <div class="carousel-item">
         <img src="shivam-office.jpg" alt="Zayn">
