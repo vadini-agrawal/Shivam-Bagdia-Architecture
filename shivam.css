@@ -14,21 +14,21 @@ body {
 }
 
 #slides { 
-	min-width: 100vh;
+	max-width: 100%;
 }
 
 #slides img { 
-	min-width: 100vh;
+	max-width: 100%;
 } 
 
 .navbar {
     text-align: right;
     display: block;
 	background-color: #FFFBF4;
-	padding-top: 3.1vh;
+	padding-top: 5.6vh;
 	padding-right: 5vh;
 	color: #808080;
-	height: 10vh;
+	height: 15vh;
 	font-size: 2.2vh;
 }
 
@@ -80,7 +80,10 @@ body {
 }
 
 .snippet img { 
+	min-width: 100%;
 	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
 }
 
 .overlay { 
@@ -91,16 +94,16 @@ body {
 	right: 0;
 	height: 100%;
 	width: 100%;
-	opacity: 0;
+	opacity: 0.85;
 	transition: .5s ease-in-out;
 	background-color: #63523F;
 }
 
 .snippet:hover .overlay {
-	opacity: .85;
+	opacity: 0;
 }
   
-.projLabel {
+.projNum {
   color: #FFFBF4;
   font-size: 10vh;
   position: absolute;
@@ -109,4 +112,20 @@ body {
   font-family: 'Exo 2', sans-serif;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.details-img {
+	background-color: #63523F;
+	color: #FFFBF4;
+	text-align: center;
+	height: 35.2vh;
+	padding-top: 10vh;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+}
+
+#smlTxt { 
+	text-align: center;
+	font-size: 5vh;
+	line-height: 8vh;
 }
