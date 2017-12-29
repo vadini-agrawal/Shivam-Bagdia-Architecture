@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> Shivam Bagdia </title>
+    <!-- Latest compiled and minified CSS -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+  <link rel="stylesheet" href="shivam.css"/> 
+
+      
+  <script> 
+   
+   function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+ </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDph3Rudv_7MEZhFDMY0CQys8hwmMb6Irk&callback=initMap">
+    </script>
+
+</head>
+
+<body> 
+
+<div class="row"> 
+  <div class="col-md-2 col-sm-0 col-xs-0"> </div>
+  <div class="col-md-8 col-sm-12 col-xs-12">
+  <div class="navbar" class="container-fluid"> 
+      <a href="index.html"> Home &nbsp; &nbsp; &nbsp; <span class="divider"> | </span> &nbsp; &nbsp; &nbsp;</a>
+      <a class="proj" href="projects.html"> Projects &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
+      <a href="#"> Studio &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
+      <a href="contact.html" class="active"> Contact </a>
+  </div>
+  </div>
+  <div class="col-md-2 col-sm-0 col-xs-0"> </div>
+</div>
+
+<div class="row text-center">
+<div class="col-md-4 col-sm-0 col-xs-0"> </div>
+<div class="col-md-4 col-sm-12 col-xs-12 pull-center">
+  <h1 class="heading"> REACH ME AT: </h1>
+  <h3> ADDRESS </h3>
+  <div id="map">My map will go here</div>
+</div>
+<div class="col-md-4 col-sm-0 col-xs-0"> </div>
+</div>
+
+</body>
+</html>
