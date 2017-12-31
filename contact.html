@@ -27,10 +27,10 @@
   <script> 
    
    function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+        var myLatLng = {lat: 21.134446, lng: 79.075111};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 15,
           center: myLatLng
         });
 
@@ -64,13 +64,36 @@
 </div>
 
 <div class="row text-center">
-<div class="col-md-4 col-sm-0 col-xs-0"> </div>
-<div class="col-md-4 col-sm-12 col-xs-12 pull-center">
-  <h1 class="heading"> REACH ME AT: </h1>
-  <h3> ADDRESS </h3>
+<div class="col-md-2 col-sm-0 col-xs-0"> </div>
+<div class="col-md-4 col-sm-6 col-xs-6 pull-center">
+  <h2 class="heading"> REACH ME AT: </h2>
+  <h5 class="contact-info"> 202, Central Bazar Road  <br> 
+Gandhi bagh, Ramdaspeth <br> 
+Nagpur, Maharashtra 440010 <br> 
+ Tel: +91-99609 22125 <br> 
+Email: shivambagdia@gmail.com <br> <br> </h5>
+<h5> Contact me! </h5>
+<form class="form-horizontal" action="https://formspree.io/vadini101@email.com"
+      method="POST">
+    <div class="form-group col-md-11">
+        <input class="form-control" id="name" type="text" placeholder="Name" name="name" >
+    </div>
+    <div class="form-group col-md-11">
+        <input id="email" class="form-control" type="email" placeholder="Your Email Address"name="_replyto">
+    </div>
+    <div class="form-group col-md-11"> 
+        <textarea class="form-control" name="message" placeholder="Your message"></textarea>
+    </div>
+    <div class="form-group">
+      <input class="send-button" type="submit" value="Send">
+    </div> 
+</form>
+</div>
+
+<div class="col-md-4 col-sm-6 col-xs-6"> 
   <div id="map">My map will go here</div>
 </div>
-<div class="col-md-4 col-sm-0 col-xs-0"> </div>
+<div class="col-md-2 col-sm-0 col-xs-0"> </div>
 </div>
 
 </body>
