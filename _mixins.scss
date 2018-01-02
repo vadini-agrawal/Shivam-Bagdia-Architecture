@@ -1,0 +1,22 @@
+/*Sass Mixins for Shivam Bagdia Architecture's Website*/
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin border-radius($percent) {
+	-webkit-border-radius: $percent;
+	-moz-border-radius: $percent;
+	-ms-border-radius: $percent;
+	border-radius: $percent;
+}
+
+@mixin transition($transitions) {
+	-webkit-transition: $transitions;
+	-moz-transition: $transitions;
+	-ms-transition: $transitions;
+	transition: $transitions;
+} 

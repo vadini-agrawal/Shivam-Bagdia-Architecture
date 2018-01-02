@@ -1,0 +1,165 @@
+/*Shivam Sass*/
+@import "variables";
+@import "mixins";
+
+body { 
+	background-color: $cream;
+	margin: 0;
+
+	.container-fluid {
+		margin: 0px;
+	}
+
+	.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	/*Home page*/
+	#slides { 
+		max-width: 100%;
+	}
+
+	.navbar {
+	    text-align: right;
+	    display: block;
+		background-color: $cream;
+		padding-top: 5.6vh;
+		padding-right: 5vh;
+		color: $light-grey;
+		height: 15vh;
+		font-size: 2.2vh;
+		a {
+			color: $light-grey;
+			font-family: $nav-font;
+		}
+		a:hover {
+			color: $light-brown;
+			text-decoration: none;
+		}
+		a.active { 
+			color: $dark-brown;
+		}
+		.divider { 
+			color: $light-grey;
+		}
+	}
+
+	#narrow {
+		flex: 0 0 3.3333%;
+		max-width: 3.3333%;
+	}
+
+	.wider {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.thumb {
+		width: 100%;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: $dark-brown;
+		@include transition(opacity 0.5s ease-in-out 0s);
+		.projNum {
+		  color: $cream;
+		  font-size: 10vh;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  font-family: $hover-font;
+		  @include transform(translate(-50%, -50%));
+		}
+	}
+
+	.overlay:hover {
+		opacity: .85;
+	} 
+
+	.info { 
+		padding-top: 3.6vh;
+		padding-bottom: 3vh;
+		padding-left: 35vh;
+	}
+
+	.filler { 
+		height: 7vh;
+	}
+
+	#smlTxt { 
+		text-align: center;
+		font-size: 5vh;
+		line-height: 8vh;
+	}
+
+	.proj1-img {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.top-space {
+		padding-top: 10vh;
+	}
+
+	.heading {
+		color:  $light-brown;
+		font-family: $nav-font;
+	}
+
+	#map {
+		height: 75vh;
+		width: 100%;
+	}
+
+	.contact-info {
+		line-height: 5vh;
+	}
+
+	.send-button {
+		@include border-radius(10%);
+		background-color: $dark-brown;
+		color: $cream;
+	}
+	.send-button:hover {
+		background-color: $almost-black;
+		@include transition(background-color 0.6s ease-in-out 0s);
+	}
+	
+	.textcontent {
+		color: $almost-black;
+		font-family: $hover-font;
+	}
+
+	.profile {
+		max-height: 20vh;
+	}
+
+	.right-space {
+		padding-right: 5vh;
+	}
+
+	.footer {
+		position: absolute;
+		padding-top: 4vh;
+		height: 10vh;
+		background-color: $dark-brown;
+		color: $cream;
+    	font-family: $nav-font;
+	}
+
+	#stick {
+		position: absolute;
+		bottom: 0;
+	}
+
+}
+
