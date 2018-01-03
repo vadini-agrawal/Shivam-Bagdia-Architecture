@@ -239,13 +239,16 @@ body {
 		@media only screen and (max-width: 575px) {
 			display: block;
 		}
+		.dropdown-toggle::after {
+   			 display:none
+		}
 	}
 
 	.dropdown-menu {
 		display:none; 
 		@media only screen and (max-width: 575px) {
 			top: 20px;
-			margin-left: 55vw;
+			margin-left: 60vw;
 			width: 5vw;
 			text-align: center; 
 			font-size: 30px;
