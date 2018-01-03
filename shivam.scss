@@ -193,7 +193,9 @@ body {
 		height: 80px;
 		background-color: $dark-brown;
 		color: $cream;
-    	font-family: $nav-font;
+    	h6 {
+    		font-family: $nav-font;
+    	}
     	@media only screen and (max-width: 575px) {
     		h6 {
     			text-align: center;
@@ -205,5 +207,13 @@ body {
 	#stick {
 		position: fixed;
 		bottom: 0;
+	}
+
+	.btn {
+		font-family: $nav-font; 
+	}
+
+	.form-group {
+		font-family: $nav-font;
 	}
 }
