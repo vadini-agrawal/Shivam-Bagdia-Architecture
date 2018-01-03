@@ -8,3 +8,10 @@ $light-grey: #808080;
 
 $nav-font:  'Barlow', sans-serif;
 $hover-font: 'Exo 2', sans-serif;
+
+$projects-grid: (
+	columns: 26, 
+	direction: ltr,
+	gutter: 0px,
+	media:  'only screen and (max-width: 575px)',
+);

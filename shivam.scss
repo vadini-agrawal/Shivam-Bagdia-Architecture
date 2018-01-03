@@ -1,6 +1,8 @@
 /*Shivam Sass*/
 @import "variables";
 @import "mixins";
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 body { 
 	background-color: $cream;
@@ -46,44 +48,63 @@ body {
 	}
 
 	#narrow {
-		flex: 0 0 3.3333%;
-		max-width: 3.3333%;
+		@include grid-column(1, $projects-grid);
+		@include grid-media($projects-grid) {
+			@include grid-column(0);
+		}
 	}
 
-	.wider {
-		flex: 0 0 20%;
-		max-width: 20%;
+	#wider {
+		@include grid-column(6, $projects-grid);
+		position: relative; 
+		@include grid-media($projects-grid) {
+			@include grid-column(26);
+		}
+		@media only screen and (max-width: 575px) {
+    		margin-bottom: 20px;
+    		margin-right: 40px;
+    		margin-left: 60px;
+    	}
+	}
+
+	#margin-nav {
+		@include grid-column(3, $projects-grid);
+		@include grid-media($projects-grid) {
+			@include grid-column(0);
+		}
 	}
 
 	.thumb {
 		width: 100%;
 	}
 
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		background-color: $dark-brown;
-		@include transition(opacity 0.5s ease-in-out 0s);
-		.projNum {
-		  color: $cream;
-		  font-size: 10vh;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  font-family: $hover-font;
-		  @include transform(translate(-50%, -50%));
+	.portfolio {
+		#wider:hover .overlay {
+			opacity: .85;
+		} 
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			height: 100%;
+			width: 100%;
+			background-color: $dark-brown;
+			@include transition(opacity 0.5s ease-in-out 0s);
+			.projNum {
+			  position: absolute;
+			  color: $cream;
+			  font-size: 10vh;
+			  top: 50%;
+			  left: 50%;
+			  font-family: $hover-font;
+			  @include transform(translate(-50%, -50%));
+			}
 		}
 	}
-
-	.overlay:hover {
-		opacity: .85;
-	} 
+	
 
 	.info { 
 		padding-top: 3.6vh;
@@ -113,15 +134,31 @@ body {
 	.heading {
 		color:  $light-brown;
 		font-family: $nav-font;
+		@media only screen and (max-width: 575px) {
+    		text-align: center;
+    	}
 	}
 
 	#map {
-		height: 75vh;
+		height: 100%;
 		width: 100%;
+		@media only screen and (max-width: 575px) {
+    		height: 200px;
+    		margin-bottom: 50px;
+    		width: 80%; 
+    		left: 10%;
+    	}
+	}
+
+	.form-horizontal {
+		@media only screen and (max-width: 575px) {
+    		width: 80%;
+    		margin-left: 10%;
+    	}
 	}
 
 	.contact-info {
-		line-height: 5vh;
+		line-height: 30px;
 	}
 
 	.send-button {
@@ -137,6 +174,9 @@ body {
 	.textcontent {
 		color: $almost-black;
 		font-family: $hover-font;
+		@media only screen and (max-width: 575px) {
+    		text-align: center;
+    	}
 	}
 
 	.profile {
@@ -148,18 +188,22 @@ body {
 	}
 
 	.footer {
-		position: absolute;
-		padding-top: 4vh;
-		height: 10vh;
+		position: fixed;
+		padding-top: 30px;
+		height: 80px;
 		background-color: $dark-brown;
 		color: $cream;
     	font-family: $nav-font;
+    	@media only screen and (max-width: 575px) {
+    		h6 {
+    			text-align: center;
+    		}
+    		padding-top: 10px;
+    	}
 	}
 
 	#stick {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 	}
-
 }
-
