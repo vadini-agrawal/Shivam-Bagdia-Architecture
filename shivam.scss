@@ -173,6 +173,10 @@ body {
 		@include border-radius(10%);
 		background-color: $dark-brown;
 		color: $cream;
+		@media only screen and (max-width: 575px) {
+			text-align: center; 
+			margin-left: 45%;
+		}
 	}
 	.send-button:hover {
 		background-color: $almost-black;
@@ -183,8 +187,9 @@ body {
 		color: $almost-black;
 		font-family: $hover-font;
 		@media only screen and (max-width: 575px) {
-    		text-align: center;
-    	}
+			text-align: center; 
+		}
+
 	}
 
 	.profile {
@@ -209,7 +214,9 @@ body {
     		h6 {
     			text-align: center;
     		}
-    		padding-top: 10px;
+    		height: 3vh;
+    		font-size: 0.5vh;
+    		padding-top: 0.2vh;
     	}
 	}
 
