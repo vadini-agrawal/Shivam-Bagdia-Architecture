@@ -46,6 +46,17 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDph3Rudv_7MEZhFDMY0CQys8hwmMb6Irk&callback=initMap">
     </script>
 
+    <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+</script>
+
 </head>
 
 <body> 
@@ -58,6 +69,7 @@
       <a class="proj" href="projects.html"> Projects &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
       <a href="studio.html"> Studio &nbsp; &nbsp; &nbsp;<span class= "divider"> | </span> &nbsp; &nbsp; &nbsp;</a> 
       <a href="contact.html" class="active"> Contact </a>
+       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
   </div>
   <div class="col-md-2 col-sm-0 col-xs-0"> </div>

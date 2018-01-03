@@ -92,6 +92,10 @@ body {
 			height: 100%;
 			width: 100%;
 			background-color: $dark-brown;
+			@media only screen and (max-width: 575px) {
+				opacity: 0.85;
+			}
+
 			@include transition(opacity 0.5s ease-in-out 0s);
 			.projNum {
 			  position: absolute;
@@ -215,5 +219,9 @@ body {
 
 	.form-group {
 		font-family: $nav-font;
+	}
+
+	.icon {
+		display: none;
 	}
 }
