@@ -22,6 +22,10 @@ body {
 		max-width: 100%;
 	}
 
+	.carousel-inner img {
+		@include filter(grayscale(70%)); 
+	}
+
 	.navbar {
 	    text-align: right;
 	    display: block;
@@ -193,10 +197,11 @@ body {
 
 	.footer {
 		position: fixed;
-		padding-top: 30px;
-		height: 80px;
+		padding-top: 6px;
+		height: 30px;
 		background-color: $dark-brown;
 		color: $cream;
+		font-size: 8px;
     	h6 {
     		font-family: $nav-font;
     	}
@@ -273,4 +278,6 @@ body {
 			display: none;
 		} 
 	}
+	
+
 }

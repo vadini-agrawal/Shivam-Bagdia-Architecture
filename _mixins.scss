@@ -20,3 +20,8 @@
 	-ms-transition: $transitions;
 	transition: $transitions;
 } 
+
+@mixin filter($filter) {
+	-webkit-filter: $filter; /* Safari 6.0 - 9.0 */
+    filter: $filter;
+}
