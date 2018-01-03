@@ -223,5 +223,48 @@ body {
 
 	.icon {
 		display: none;
+		@media only screen and (max-width: 575px) {
+			display: block;
+			margin-left: 80vw; 
+			top: -20px; 
+			position: absolute;
+			background-color: $cream; 
+			border-color: $almost-black;
+			color: $almost-black;
+		}
+	}
+
+	.dropdown {
+		display:none; 
+		@media only screen and (max-width: 575px) {
+			display: block;
+		}
+	}
+
+	.dropdown-menu {
+		display:none; 
+		@media only screen and (max-width: 575px) {
+			top: 20px;
+			margin-left: 60vw;
+			width: 5vw;
+			text-align: center; 
+			font-size: 30px;
+			background-color: $dark-brown;
+			a li {
+				color: $cream;
+			}
+			li:hover {
+				background-color: $light-brown;
+			}
+			a li:hover {
+				color: $cream; 
+			}
+		}
+	}
+
+	.nav-links {
+		@media only screen and (max-width: 575px) {
+			display: none;
+		} 
 	}
 }
