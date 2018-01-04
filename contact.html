@@ -42,6 +42,12 @@
       }
  </script>
 
+   <script> 
+    $(document).ready(function () {
+        $('.hidden').fadeIn(500).removeClass('hidden');
+    });
+  </script>
+
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDph3Rudv_7MEZhFDMY0CQys8hwmMb6Irk&callback=initMap">
     </script>
@@ -82,7 +88,7 @@ Maharashtra, India 440010 <br>
  Tel: +91-99609 22125 <br> 
 Email: shivambagdia@gmail.com <br> <br> </h5>
 <h6 class="textcontent" > Contact me here: </h5>
-<form class="form-horizontal" action="https://formspree.io/shivambagdia@gmail.com"
+<form class="hidden form-horizontal" action="https://formspree.io/shivambagdia@gmail.com"
       method="POST">
     <div class="form-group col-md-11">
         <input class="form-control" id="name" type="text" placeholder="Name" name="name" >
@@ -99,7 +105,7 @@ Email: shivambagdia@gmail.com <br> <br> </h5>
 </form>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-6"> 
-  <div id="map">My map will go here</div>
+  <div class="hidden" id="map">My map will go here</div>
 </div>
 <div class="col-md-2 col-sm-0 col-xs-0"> </div>
 </div>

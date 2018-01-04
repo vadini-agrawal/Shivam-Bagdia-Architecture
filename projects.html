@@ -25,19 +25,10 @@
   <link rel="stylesheet" href="shivam.css"/> 
 
   <script> 
-    (function($) {
-    var $window = $(window),
-        $object = $('#wider .wider');
-
-    function resize() {
-        if ($window.width() < 760) {
-            return $div.removeClass('wider');
-        }
-    }
-
-    $(document).ready(resize());
+    $(document).ready(function () {
+        $('.hidden').fadeIn(500).removeClass('hidden');
+    });
   </script>
-
 </head>
 
 <body class="pull-center"> 
@@ -67,18 +58,18 @@
 <div class="row portfolio">
   <div id="margin-nav"> </div>
   <div id="wider"> 
-    <img class="thumb" src="waffle-1.jpg" alt="Restaurant"> </img> 
+    <img class="hidden thumb" src="waffle-1.jpg" alt="Restaurant"> </img> 
     <a href="proj1.html"> <div class="overlay"> <div class="projNum"> 01 </div> </div> </a> 
   </div>
   <div id="narrow"> </div>
   <div id="wider">  
-    <img class="thumb" src="office-1.jpg" alt="Office"> </img> 
+    <img class="hidden thumb" src="office-1.jpg" alt="Office"> </img> 
     <a href="proj2.html"> 
     <div class="overlay"> <div class="projNum"> 02 </div> </div> </a>
   </div>
   <div id="narrow"> </div>
   <div id="wider">  
-    <img class="thumb" src="room-1.jpg" alt="Room"> </img> 
+    <img class="hidden thumb" src="room-1.jpg" alt="Room"> </img> 
     <a href="proj3.html"> 
     <div class="overlay"> <div class="projNum"> 03 </div> </div> </a>
   </div>

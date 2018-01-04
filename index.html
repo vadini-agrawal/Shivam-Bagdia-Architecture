@@ -20,6 +20,12 @@
 
   <link rel="stylesheet" href="shivam.css"/> 
 
+  <script> 
+    $(document).ready(function () {
+        $('.hidden').fadeIn(500).removeClass('hidden');
+    });
+  </script>
+
 </head>
 
 <body> 
@@ -49,7 +55,7 @@
   <div class="row container-fluid"> 
   <div class="col-md-2 col-sm-0 col-xs-0"> </div>
   <div class="col-md-8 col-sm-12 col-xs-12"> 
-  <div id="slides" class="carousel slide" data-ride="carousel">
+  <div id="slides" class="hidden carousel slide" data-ride="carousel">
 
     <!--Indicators --> 
     <ul class="carousel-indicators">
