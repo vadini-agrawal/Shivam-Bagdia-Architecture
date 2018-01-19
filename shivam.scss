@@ -209,6 +209,13 @@ body {
 		font-size: 8px;
     	h6 {
     		font-family: $nav-font;
+    		a {
+    			color: $cream;
+    		}
+    		a:hover {
+    			color: $light-grey;
+    			text-decoration: none;
+    		}
     	}
     	@media only screen and (max-width: 575px) {
     		h6 {
